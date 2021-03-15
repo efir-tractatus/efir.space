@@ -19,11 +19,27 @@ class App extends React.Component {
         { item: 11 },
         { item: 12 },
       ],
+      globalModalStatus: false,
     };
+    this.toggleGlobalModalStatus = this.toggleGlobalModalStatus.bind(this);
+  }
+
+  toggleGlobalModalStatus() {
+    this.setState({
+      globalModalStatus: !this.state.globalModalStatus,
+    });
   }
 
   render() {
-    return <CardList cards={this.state.cards} />;
+    return (
+      <div className="main">
+        <CardList
+          cards={this.state.cards}
+          toggleGlobalModalStatus={this.toggleGlobalModalStatus}
+          globalModalStatus={this.state.globalModalStatus}
+        />
+      </div>
+    );
   }
 }
 

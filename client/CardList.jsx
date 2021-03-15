@@ -1,9 +1,16 @@
 import React from 'react';
 import Card from './Card.jsx';
 
-var CardList = ({ cards }) => {
+var CardList = ({ cards, toggleGlobalModalStatus, globalModalStatus }) => {
   let renderCards = cards.map((card, index) => {
-    return <Card card={card} key={index} />;
+    return (
+      <Card
+        card={card}
+        toggleGlobalModalStatus={toggleGlobalModalStatus}
+        globalModalStatus={globalModalStatus}
+        key={index}
+      />
+    );
   });
   return <div className="card-list">{renderCards}</div>;
 };

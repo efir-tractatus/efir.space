@@ -17,3 +17,15 @@
   margin-top: 5vw;
   justify-content: center;
 }
+#modal-root {
+  border-style: solid;
+  border-radius: 2vw;
+  border-color: white;
+  box-shadow: 0.2vw 0.2vw 1vw;
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+  height: 60vw;
+  width: 94vw;
+  z-index: -1;
+}
