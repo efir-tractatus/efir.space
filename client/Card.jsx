@@ -37,7 +37,7 @@ var Card = ({ card, globalModalStatus, toggleGlobalModalStatus }) => {
       <Modal
         open={localModalStatus}
         children={card.item}
-        toggleModal={syncModelStatus.bind(this)}
+        toggleModal={syncModelStatus}
       ></Modal>
     </div>
   );
