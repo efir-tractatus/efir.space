@@ -8,9 +8,11 @@ var Modal = ({ open, children, toggleModal }) => {
 
   return ReactDOM.createPortal(
     <div className="modal-overlay" id="modal-root">
-      <a className="modal-close" onClick={toggleModal}>
-        X
-      </a>
+      <div className="modal-controls">
+        <a className="modal-close" onClick={toggleModal}>
+          <img className="close-icon" src="./images/close-icon.png"></img>
+        </a>
+      </div>
       {children}
     </div>,
     document.getElementById('modal')

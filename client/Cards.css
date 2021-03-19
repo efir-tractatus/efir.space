@@ -21,11 +21,29 @@
   border-style: solid;
   border-radius: 2vw;
   border-color: white;
-  box-shadow: 0.2vw 0.2vw 1vw;
+  box-shadow: 0vw 0vw 7vw;
   position: absolute;
   top: 3vh;
   left: 3vw;
-  height: 60vw;
+  height: 48vw;
   width: 94vw;
   z-index: 1;
+}
+
+.modal-controls{
+  justify-content: right;
+}
+
+.modal-overlay{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+.close-icon{
+  width: 1vw;
+  height: 2vh;
 }
